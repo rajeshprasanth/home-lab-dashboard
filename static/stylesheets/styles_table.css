@@ -1,0 +1,62 @@
+/* 
+====================================================================
+CSS styling for Alert Monitor page
+section: Table
+====================================================================
+*/
+.table {
+	border-collapse: collapse;
+	border-spacing: 1px;
+	/* width: 100%; */
+	border: 10px solid black; 
+	word-wrap:break-word;
+	table-layout: fixed;
+}
+.table,.table th,.table td {
+	height: 1px; 
+	border: 1px solid #ccc;
+}
+
+
+.table th {
+	position: relative;
+}
+
+.table tr {
+	height: 30px
+}
+
+.table td {
+	overflow:hidden;
+	white-space:nowrap; 
+}
+
+.resizer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5px;
+	cursor: col-resize;
+	user-select: none;
+}
+.resizer:hover, .resizing {
+	border-right: 1px solid gray;
+}
+
+.resizable {
+	border: 1px solid gray;
+	height: 100px;
+	width: 100px;
+	position: relative;
+}
+
+table tbody tr:hover {
+          background-color: #cccccc;
+		  color : white;
+        }
+
+thead input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
