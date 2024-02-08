@@ -2,8 +2,9 @@ Component,Title,DNS Prefix,DNS,IP Address,Port
 Network Infrastructure,wlsrt.inet0.internal.das,http,wlsrt.inet0.internal.das,192.168.1.1,80
 Network Infrastructure,wlsrt.inet1.internal.das,http,wlsrt.inet1.internal.das,10.0.0.1,80
 Network Infrastructure,sw0.internal.das,http,sw0.internal.das,10.0.0.2,80
-Embedded Server Management,PLPBTH001.idrac.internal.das,http,PLPBTH001.idrac.internal.das,10.0.0.11,80
-Embedded Server Management,PLPESX001.ilo.internal.das,http,PLPESX001.ilo.internal.das,10.0.0.21,80
+Network Infrastructure,sw1.internal.das,http,sw1.internal.das,10.0.0.3,80
+Embedded Server Management,PLPBTH001.rm.internal.das,http,PLPBTH001.rm.internal.das,10.0.0.11,80
+Embedded Server Management,PLPESX001.rm.internal.das,http,PLPESX001.rm.internal.das,10.0.0.21,80
 Infrastructure Monitoring,PLPBTH001.cockpit.internal.das,http,PLPBTH001.cockpit.internal.das,,
 Infrastructure Monitoring,PLPBTH001.monit.internal.das,http,PLPBTH001.monit.internal.das,,
 Infrastructure Monitoring,PLPLBR001.cockpit.internal.das,http,PLPLBR001.cockpit.internal.das,,

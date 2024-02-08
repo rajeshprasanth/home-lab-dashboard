@@ -1,0 +1,34 @@
+Component,Title,DNS Prefix,DNS,IP Address,Port
+Network Infrastructure,wlsrt.inet0.internal.das,http,wlsrt.inet0.internal.das,192.168.1.1,80
+Network Infrastructure,wlsrt.inet1.internal.das,http,wlsrt.inet1.internal.das,10.0.0.1,80
+Network Infrastructure,sw0.internal.das,http,sw0.internal.das,10.0.0.2,80
+Network Infrastructure,sw1.internal.das,http,sw1.internal.das,10.0.0.3,80
+Embedded Server Management,PLPBTH001.rm.internal.das,http,PLPBTH001.rm.internal.das,10.0.0.11,80
+Embedded Server Management,PLPESX001.rm.internal.das,http,PLPESX001.rm.internal.das,10.0.0.21,80
+Infrastructure Monitoring,PLPBTH001.cockpit.internal.das,http,PLPBTH001.cockpit.internal.das,,
+Infrastructure Monitoring,PLPBTH001.monit.internal.das,http,PLPBTH001.monit.internal.das,,
+Infrastructure Monitoring,PLPLBR001.cockpit.internal.das,http,PLPLBR001.cockpit.internal.das,,
+Infrastructure Monitoring,PLPLBR001.monit.internal.das,http,PLPLBR001.monit.internal.das,,
+Infrastructure Monitoring,PLPLBR002.cockpit.internal.das,http,PLPLBR002.cockpit.internal.das,,
+Infrastructure Monitoring,PLPLBR002.monit.internal.das,http,PLPLBR002.monit.internal.das,,
+Infrastructure Monitoring,alertmonitor.client.internal.das,http,alertmonitor.client.internal.das,,
+Infrastructure Monitoring,zabbix.internal.das,http,zabbix.internal.das,,
+Infrastructure Monitoring,grafana.internal.das,http,grafana.internal.das,,
+Infrastructure Monitoring,haproxy.internal.das,http,haproxy.internal.das,,
+Infrastructure Monitoring,dashboard.internal.das,http,dashboard.internal.das,,
+Infrastructure Automation,ansible-semaphore.internal.das,http,ansible-semaphore.internal.das,,
+Infrastructure Automation,dkron.internal.das,http,dkron.internal.das,,
+Storage Management,PLPNAS001.mui.internal.das,http,PLPNAS001.mui.internal.das,,
+Virtual Machine Management,PLPESX001.mui.internal.das,http,PLPESX001.mui.internal.das,,
+Vulnerability Management,wazuh.internal.das ,http,wazuh.internal.das ,,
+Vulnerability Management,xcitium openedr,https,www.xcitium.com/free-edr/,,
+Container Orchestration,portainer,https,www.portainer.io/,,
+Container Orchestration,docker,https,www.docker.com/,,
+Version Control System,github,https,github.com/,,
+Version Control System,gitlab,https,about.gitlab.com/,,
+Version Control System,bitbucket,https,bitbucket.org/product,,
+Email Services,gmail,https,www.google.com/gmail/about/,,
+Email Services,outlook,https,www.microsoft.com/en-in/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook,,
+Email Services,proton mail,https,proton.me/mail,,
+Media & Entertainment,Amazon Prime,https,www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root,,
+Media & Entertainment,Disney Hot Star,https,www.hotstar.com/in/home?ref=%2Fin,,
