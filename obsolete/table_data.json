@@ -1,0 +1,106 @@
+[
+  {
+    "Category": "Network",
+    "Sub-Category": "Routers",
+    "Label": "Router 1",
+    "Icon": "bi bi-router",
+    "Link1": "http://wlsrt.inet0.internal.das",
+    "Link2": "http://192.168.1.1"
+  },
+  {
+    "Category": "Network",
+    "Sub-Category": "Routers",
+    "Label": "Router 2",
+    "Icon": "bi bi-router",
+    "Link1": "http://wlsrt.inet1.internal.das",
+    "Link2": "http://10.0.0.1"
+  },
+  {
+    "Category": "Network",
+    "Sub-Category": "Switches",
+    "Label": "Gigabit Ethernet Switch 1",
+    "Icon": "bi bi-ethernet",
+    "Link1": "http://sw0.internal.das",
+    "Link2": "http://10.0.0.2"
+  },
+  {
+    "Category": "Network",
+    "Sub-Category": "Switches",
+    "Label": "Gigabit Ethernet Switch 2",
+    "Icon": "bi bi-ethernet",
+    "Link1": "http://sw1.internal.das",
+    "Link2": "http://10.0.0.3"
+  },
+  {
+    "Category": "Placeholder_category1",
+    "Sub-Category": "Placeholder_sub-category1",
+    "Label": "label1",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  },
+  {
+    "Category": "Placeholder_category1",
+    "Sub-Category": "Placeholder_sub-category1",
+    "Label": "label2",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  },
+  {
+    "Category": "Placeholder_category1",
+    "Sub-Category": "Placeholder_sub-category2",
+    "Label": "label3",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  },
+  {
+    "Category": "Placeholder_category2",
+    "Sub-Category": "Placeholder_sub-category1",
+    "Label": "label1",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  },
+  {
+    "Category": "Placeholder_category2",
+    "Sub-Category": "Placeholder_sub-category1",
+    "Label": "label2",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  },
+  {
+    "Category": "Placeholder_category2",
+    "Sub-Category": "Placeholder_sub-category2",
+    "Label": "label3",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  },
+  {
+    "Category": "Placeholder_category2",
+    "Sub-Category": "Placeholder_sub-category3",
+    "Label": "label4",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  },
+  {
+    "Category": "Placeholder_category2",
+    "Sub-Category": "Placeholder_sub-category3",
+    "Label": "label5",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  },
+  {
+    "Category": "Placeholder_category2",
+    "Sub-Category": "Placeholder_sub-category4",
+    "Label": "label6",
+    "Icon": "bi bi-question-circle",
+    "Link1": "http://www.google.co.in",
+    "Link2": "http://www.google.co.in"
+  }
+]

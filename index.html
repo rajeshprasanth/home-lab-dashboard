@@ -9,13 +9,7 @@
 	<link rel="stylesheet" href="static/stylesheets/dataTables.bootstrap5.css">
 	<link rel="stylesheet" href="static/stylesheets/bootstrap-icons.css">
 	<link rel="stylesheet" href="static/stylesheets/styles_body.css">
-	<link rel="stylesheet" href="static/stylesheets/styles_banner.css">  
-	<link rel="stylesheet" href="static/stylesheets/styles_navigation.css">  
-	<link rel="stylesheet" href="static/stylesheets/styles_table.css">
-	<link rel="stylesheet" href="static/stylesheets/styles_statistics.css">
-	<link rel="stylesheet" href="static/stylesheets/styles_dashboard.css">
 	
-	<script rel="text/javascript" charset="utf8" src="static/javascripts/plotly-latest.min.js"></script>
 	
   </head>
   <body>
@@ -24,1385 +18,550 @@
       
 
 
-<div class="banner-theme">
-  <div class="container-fluid" style="background-color:#2e3440;" >
-    <div class="row">
-      <div class="col" >
-        <h3 class="display-4 text-white ps-3 pt-2" >Dashboard</h3>
-        <h5 class="text-white ps-3">an unified dashboard for home laboratory</h5>
-      </div>
-
-    </div>
+<div class="container-fluid" style="background-color:#312139;">
+  <div class="row">
+    <div class="col">
+      <h5 class="display-6 text-white ps-3 pt-2">Dashboard</h5>
+	</div>
   </div>
 </div>
 
 
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-bs-toggle="tab" href="#menu1">Network</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu2">Remote Access</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu3">Infrastructure</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu4">Storage</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu5">Virtual</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu6">Vulnerability</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu7">Version Control</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu8">Containers</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu9">Email</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu10">Media & Entertainment</a>
+  </li>
+</ul>
 
-<div class="container-fluid py-5 px-5">
-  <!-- row 1 starts here-->
-  <div class="row  py-5">
-	
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Network Infrastructure 
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="menu1">
+		<div class="container mx-3 my-3">
+		<!-- ################################# -->
+		<!-- Settings for routers goes here -->
+		<!-- ################################# -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Routers</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Router 1</h5>
+							<!-- <h2><i class="bi bi-router" style="font-size: 70px;"> </i></h2> -->
+							<h2><img width="80px" height="80px" src="static/logo/Wireless_Router.svg"></img></h2>
+
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Router 2</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Wireless_Router.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					  	<tr>
-							<td style="width:80%">wlsrt.inet0.internal.das</td>
-							<td style="width:10%"><a href="http://wlsrt.inet0.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://192.168.1.1:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					  
-					 
-					 
-					
-					
-					  	<tr>
-							<td style="width:80%">wlsrt.inet1.internal.das</td>
-							<td style="width:10%"><a href="http://wlsrt.inet1.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://10.0.0.1:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					  
-					 
-					 
-					
-					
-					  	<tr>
-							<td style="width:80%">sw0.internal.das</td>
-							<td style="width:10%"><a href="http://sw0.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://10.0.0.2:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					  
-					 
-					 
-					
-					
-					  	<tr>
-							<td style="width:80%">sw1.internal.das</td>
-							<td style="width:10%"><a href="http://sw1.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://10.0.0.3:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					  
-					 
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
+		<!-- ################################# -->
+		<!-- Settings for switches goes here -->
+		<!-- #################################	 -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Switches</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Switch 1</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Switch.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Switch 2</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Switch.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
-		  </div>
+			</div>
 		</div>
-	
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Embedded Server Management 
+	</div>
+
+  <div class="tab-pane fade" id="menu2">
+		<div class="container mx-3 my-3">
+		<!-- ################################# -->
+		<!-- Settings for Dell IDRAC goes here -->
+		<!-- ################################# -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Dell Servers</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPBTH001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Dell.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://plpbth001.rm.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.11:80" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					  	<tr>
-							<td style="width:80%">PLPBTH001.rm.internal.das</td>
-							<td style="width:10%"><a href="http://PLPBTH001.rm.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://10.0.0.11:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					  
-					 
-					 
-					
-					
-					  	<tr>
-							<td style="width:80%">PLPESX001.rm.internal.das</td>
-							<td style="width:10%"><a href="http://PLPESX001.rm.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://10.0.0.21:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					  
-					 
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
+		<!-- ################################# -->
+		<!-- Settings for HP ILO goes here -->
+		<!-- #################################	 -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>HP Servers</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPESX001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/HP.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://plpesx001.rm.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.21:80" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
-				</div>
-		  </div>
+			</div>
 		</div>
-		
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Infrastructure Monitoring 
+	</div>
+
+
+  <div class="tab-pane fade" id="menu3">
+		<div class="container mx-3 my-3">
+		<!-- ################################# -->
+		<!-- Settings for cockpit goes here -->
+		<!-- ################################# -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Cockpit</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPBTH001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Cockpit.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPLBR001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Cockpit.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPLBR002</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Cockpit.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">PLPBTH001.cockpit.internal.das</td>
-							<td style="width:10%"><a href="http://PLPBTH001.cockpit.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">PLPBTH001.monit.internal.das</td>
-							<td style="width:10%"><a href="http://PLPBTH001.monit.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">PLPLBR001.cockpit.internal.das</td>
-							<td style="width:10%"><a href="http://PLPLBR001.cockpit.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">PLPLBR001.monit.internal.das</td>
-							<td style="width:10%"><a href="http://PLPLBR001.monit.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">PLPLBR002.cockpit.internal.das</td>
-							<td style="width:10%"><a href="http://PLPLBR002.cockpit.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">PLPLBR002.monit.internal.das</td>
-							<td style="width:10%"><a href="http://PLPLBR002.monit.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">alertmonitor.client.internal.das</td>
-							<td style="width:10%"><a href="http://alertmonitor.client.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">zabbix.internal.das</td>
-							<td style="width:10%"><a href="http://zabbix.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">grafana.internal.das</td>
-							<td style="width:10%"><a href="http://grafana.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">haproxy.internal.das</td>
-							<td style="width:10%"><a href="http://haproxy.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">dashboard.internal.das</td>
-							<td style="width:10%"><a href="http://dashboard.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
+		<!-- ################################# -->
+		<!-- Settings for monit goes here -->
+		<!-- #################################	 -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Monit</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPBTH001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Monit.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPLBR001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Monit.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
-		  </div>
-		</div>	
-		
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Storage Management 
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPLBR002</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Monit.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">PLPNAS001.mui.internal.das</td>
-							<td style="width:10%"><a href="http://PLPNAS001.mui.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
+		<!-- ################################# -->
+		<!-- Settings for Zabbix goes here -->
+		<!-- #################################	 -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Zabbix</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Zabbix Prod</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Zabbix.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Zabbix Dev</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Zabbix.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
-		  </div>
-		</div>	
-		
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Virtual Machine Management 
 			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">PLPESX001.mui.internal.das</td>
-							<td style="width:10%"><a href="http://PLPESX001.mui.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
+		<!-- ################################# -->
+		<!-- Settings for Alert Monitor goes here -->
+		<!-- #################################	 -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Alert Monitor</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Alert Monitor <br>Prod</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Alert.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Alert Monitor <br>Dev</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Alert.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
 				</div>
-		  </div>
+			</div>
+		<!-- ################################# -->
+		<!-- Settings for Grafana goes here -->
+		<!-- #################################	 -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Grafana</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Grafana Prod</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Grafana.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">Grafana Dev</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Grafana.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- ################################# -->
+		<!-- Settings for haproxy goes here -->
+		<!-- #################################	 -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Haproxy</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPLBR001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Haproxy.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- ################################# -->
+		<!-- Settings for pihole goes here -->
+		<!-- #################################	 -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>Pi-Hole</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPLBR001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Pihole.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet0.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 mx-3">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PLPLBR002</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Pihole.png"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://wlsrt.inet1.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.1" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Vulnerability Management 
+	</div>
+
+  <div class="tab-pane fade" id="menu4">
+		<div class="container mx-3 my-3">
+		<!-- ################################# -->
+		<!-- Settings for NAS SERVER goes here -->
+		<!-- ################################# -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>NAS Storage Console</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PUPNAS001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/Truenas.svg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://pupnas001.ui.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.11:80" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">wazuh.internal.das </td>
-							<td style="width:10%"><a href="http://wazuh.internal.das " target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">xcitium openedr</td>
-							<td style="width:10%"><a href="https://www.xcitium.com/free-edr/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
-				</div>
-				</div>
-		  </div>
 		</div>
-		
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Container Orchestration 
+	</div>
+  <div class="tab-pane fade" id="menu5">
+		<div class="container mx-3 my-3">
+		<!-- ################################# -->
+		<!-- Settings for PEPESX001 goes here -->
+		<!-- ################################# -->
+		<div class="border text-white round-5" style="background-color:#67397a;"><h4>ESXi vSphere</h4></div>
+			<div class="row my-3">
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PEPESX001</h5>
+							<h2><img width="80px" height="80px" src="static/logo/ESXi.jpg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://pepesx001.ui.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.11:80" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 mx-3 ">
+					<div class="card text-center border border-primary shadow-0">
+						<div class="card-body">
+							<h5 class="card-title">PEPESX002</h5>
+							<h2><img width="80px" height="80px" src="static/logo/ESXi.jpg"></img></h2>
+						</div>
+					    <div class="row px-2 no-gutters">
+							<div class="col-6">
+								<h5 class="card card-block border-0"> <a href="http://pupesx001.ui.internal.das" target="_blank" rel="noopener noreferrer">Link 1</a> </h5>
+							</div>
+							<div class="col-6">
+								<h5 class="card card-block border-0"><a href="http://10.0.0.11:80" target="_blank" rel="noopener noreferrer">Link 2</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">portainer</td>
-							<td style="width:10%"><a href="https://www.portainer.io/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">docker</td>
-							<td style="width:10%"><a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
-				</div>
-				</div>
-		  </div>
 		</div>
-		
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Version Control System 
-			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">github</td>
-							<td style="width:10%"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">gitlab</td>
-							<td style="width:10%"><a href="https://about.gitlab.com/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">bitbucket</td>
-							<td style="width:10%"><a href="https://bitbucket.org/product" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
-				</div>
-				</div>
-		  </div>
-		</div>
-		
-		
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Email Services 
-			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">gmail</td>
-							<td style="width:10%"><a href="https://www.google.com/gmail/about/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">outlook</td>
-							<td style="width:10%"><a href="https://www.microsoft.com/en-in/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">proton mail</td>
-							<td style="width:10%"><a href="https://proton.me/mail" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					</tbody>
-				  </table>
-				</div>
-				</div>
-		  </div>
-		</div>
-		
-		<div class="col-lg-4 col-md-6 py-2 ">
-		  <div class="card rounded" style="background-color:#8fbcbb">
-			<div class="card-header"> 
-				Media & Entertainment 
-			</div>
-				<div class="card card-body" style="background-color:#3b4252"> 
-				<div class="table-responsive">
-				  <table class="table table-hover table-sm table-dark border-info">
-					<tbody>
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">Amazon Prime</td>
-							<td style="width:10%"><a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					
-						<tr>
-							<td style="width:80%">Disney Hot Star</td>
-							<td style="width:10%"><a href="https://www.hotstar.com/in/home?ref=%2Fin" target="_blank" rel="noopener noreferrer" >link 1</a></td>
-							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
-						</tr>
-					
-					 
-					
-					</tbody>
-				  </table>
-				</div>
-				</div>
-		  </div>
-		</div>
-		
-		
+	</div>
+  <div class="tab-pane fade" id="menu6">
   </div>
-  
-    
-				
-   
+  <div class="tab-pane fade" id="menu7">
+  </div>
+  <div class="tab-pane fade" id="menu8">
+  </div>
+  <div class="tab-pane fade" id="menu9">
+  </div>
+  <div class="tab-pane fade" id="menu10">
+  </div>
 </div>
-
 
 
     </div>

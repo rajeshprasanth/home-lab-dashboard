@@ -1,0 +1,361 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container-fluid" style="background-color:#2e3440;">
+  <div class="row">
+    <div class="col">
+      <h3 class="display-4 text-white ps-3 pt-2">Dashboard</h3>
+      <h5 class="text-white ps-3">an unified dashboard for home laboratory</h5>
+    </div>
+  </div>
+</div>
+
+<div class="card-columns">
+
+<div class="container-fluid py-5 px-5">
+  <!-- row 1 starts here-->
+  <div class="row  py-5">
+	
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Network Infrastructure 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Network Infrastructure" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Network Infrastructure" and line["Port"] != "" %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>
+	
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Embedded Server Management 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Embedded Server Management" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Embedded Server Management" and line["Port"] != "" %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Infrastructure Monitoring 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Infrastructure Monitoring" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Infrastructure Monitoring"  and line["Port"] != "" %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>	
+		
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Storage Management 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Storage Management" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Storage Management"  and line["Port"] != "" %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>	
+		
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Virtual Machine Management 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Virtual Machine Management" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Virtual Machine Management"  and line["Port"] != ""  %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Vulnerability Management 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Vulnerability Management" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Vulnerability Management"  and line["Port"] != "" %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Container Orchestration 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Container Orchestration" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Container Orchestration"  and line["Port"] != ""  %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Version Control System 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Version Control System" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Version Control System" and line["Port"] != ""  %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Email Services 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Email Services" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Email Services"  and line["Port"] != "" %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 py-2 ">
+		  <div class="card rounded" style="background-color:#8fbcbb">
+			<div class="card-header"> 
+				Media & Entertainment 
+			</div>
+				<div class="card card-body" style="background-color:#3b4252"> 
+				<div class="table-responsive">
+				  <table class="table table-hover table-sm table-dark border-info">
+					<tbody>
+					{% for line in data %}
+					{% if line["Component"] == "Media & Entertainment" and line["Port"] == "" %}
+						<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					{% elif line["Component"] == "Media & Entertainment"  and line["Port"] != "" %}
+					  	<tr>
+							<td style="width:80%">{{line["Title"]}}</td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["DNS"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="{{line["DNS Prefix"]}}://{{line["IP Address"]}}:{{line["Port"]}}" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  
+					 {% endif %}
+					 
+					{% endfor %}
+					</tbody>
+				  </table>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		
+  </div>
+  
+</div>    
+				
+   
+</div>
+
+
+{% endblock %}
