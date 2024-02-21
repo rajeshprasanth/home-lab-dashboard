@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+		
+	</title>
+	<meta http-equiv="refresh" content="60">
+	<link rel="stylesheet" href="static/stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" href="static/stylesheets/dataTables.bootstrap5.css">
+	<link rel="stylesheet" href="static/stylesheets/bootstrap-icons.css">
+	<link rel="stylesheet" href="static/stylesheets/styles_body.css">
+	<link rel="stylesheet" href="static/stylesheets/styles_banner.css">  
+	<link rel="stylesheet" href="static/stylesheets/styles_navigation.css">  
+	<link rel="stylesheet" href="static/stylesheets/styles_table.css">
+	<link rel="stylesheet" href="static/stylesheets/styles_statistics.css">
+	<link rel="stylesheet" href="static/stylesheets/styles_dashboard.css">
+	
+	
+  </head>
+  <body>
+  
+    <div class="container-fluid">
+      
+
+
+<div class="container-fluid" style="background-color:#2e3440;">
+  <div class="row">
+    <div class="col">
+      <h3 class="display-4 text-white ps-3 pt-2">Dashboard</h3>
+      <h5 class="text-white ps-3">an unified dashboard for home laboratory</h5>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid py-5 px-5">
+  <div class="card p-3 shadow" style="background-color:#2e3440; ">
+    <nav>
+      <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-network-tab" data-bs-toggle="tab" data-bs-target="#nav-network" type="button" role="tab" aria-controls="nav-network" aria-selected="true">Network</button>
+        <button class="nav-link" id="nav-remote-tab" data-bs-toggle="tab" data-bs-target="#nav-remote" type="button" role="tab" aria-controls="nav-remote" aria-selected="false">Remote Access</button>
+        <button class="nav-link" id="nav-infra-tab" data-bs-toggle="tab" data-bs-target="#nav-infra" type="button" role="tab" aria-controls="nav-infra" aria-selected="false">Infrastructure</button>
+        <button class="nav-link" id="nav-storage-tab" data-bs-toggle="tab" data-bs-target="#nav-storage" type="button" role="tab" aria-controls="nav-storage" aria-selected="true">Storage</button>
+        <button class="nav-link" id="nav-virtual-tab" data-bs-toggle="tab" data-bs-target="#nav-virtual" type="button" role="tab" aria-controls="nav-virtual" aria-selected="false">Virtual</button>
+        <button class="nav-link" id="nav-vulnerablity-tab" data-bs-toggle="tab" data-bs-target="#nav-vulnerablity" type="button" role="tab" aria-controls="nav-vulnerablity" aria-selected="false">Vulnerablity</button>
+		<button class="nav-link" id="nav-version-tab" data-bs-toggle="tab" data-bs-target="#nav-version" type="button" role="tab" aria-controls="nav-version" aria-selected="false">Version Control</button>
+        
+        <button class="nav-link" id="nav-container-tab" data-bs-toggle="tab" data-bs-target="#nav-container" type="button" role="tab" aria-controls="nav-container" aria-selected="false">Containers</button>
+        <button class="nav-link" id="nav-email-tab" data-bs-toggle="tab" data-bs-target="#nav-email" type="button" role="tab" aria-controls="nav-email" aria-selected="false">Email</button>
+        <button class="nav-link" id="nav-media-tab" data-bs-toggle="tab" data-bs-target="#nav-media" type="button" role="tab" aria-controls="nav-media" aria-selected="false">Media & Entertainment</button>
+
+      </div>
+    </nav>
+    <div class="tab-content p-3 border bg-light h-100" id="nav-tabContent">
+      <div class="tab-pane fade active show" id="nav-network" role="tabpanel" aria-labelledby="nav-network-tab">
+        <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+					  	<tr>
+							<td style="width:80%">Router 1</td>
+							<td style="width:10%"><a href="http://wlsrt.inet0.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://192.168.1.1:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  	<tr>
+							<td style="width:80%">Router 2</td>
+							<td style="width:10%"><a href="http://wlsrt.inet1.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.1:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  	<tr>
+							<td style="width:80%">Switch 1</td>
+							<td style="width:10%"><a href="http://sw0.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.2:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+            					  	<tr>
+							<td style="width:80%">Switch 2</td>
+							<td style="width:10%"><a href="http://sw1.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.3:80" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					</tbody>
+				  </table>
+		</div>
+      </div>
+        </div>
+      <div class="tab-pane fade" id="nav-remote" role="tabpanel" aria-labelledby="nav-remote-tab">
+	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+					  	<tr>
+							<td style="width:80%">PLPBTH001 (iDRAC)</td>
+							<td style="width:10%"><a href="http://plpbth001.rm.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.11:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  	<tr>
+							<td style="width:80%">PEPESX001 (ILO)</td>
+							<td style="width:10%"><a href="http://pepesx001.rm.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.21:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					</tbody>
+				  </table>
+		</div>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="nav-infra" role="tabpanel" aria-labelledby="nav-infra-tab">
+		<div class="row">
+		<div class="col-lg-4 col-md-3 py-2">
+			  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+					  	<tr>
+							<td style="width:80%">PLPBTH001 (cockpit)</td>
+							<td style="width:10%"><a href="http://plpbth001.cockpit.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.11:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  	<tr>
+							<td style="width:80%">PLPLBR001 (cockpit)</td>
+							<td style="width:10%"><a href="http://plplbr001.cockpit.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.21:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+						<tr>
+							<td style="width:80%">PLPLBR002 (cockpit)</td>
+							<td style="width:10%"><a href="http://plplbr002.cockpit.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.21:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+					</tbody>
+				  </table>
+		</div>
+      </div>
+		</div>
+				<div class="col-lg-4 col-md-3 py-2">
+			  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+						
+						<tr>
+							<td style="width:80%">PLPBTH001 (monit)</td>
+							<td style="width:10%"><a href="http://plpbth001.monit.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.11:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  	<tr>
+							<td style="width:80%">PLPLBR001 (monit)</td>
+							<td style="width:10%"><a href="http://plplbr001.monit.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.21:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+						<tr>
+							<td style="width:80%">PLPLBR002 (monit)</td>
+							<td style="width:10%"><a href="http://plplbr002.monit.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.21:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					</tbody>
+				  </table>
+		</div>
+      </div>
+		</div>
+		
+						<div class="col-lg-4 col-md-3 py-2">
+			  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+						
+
+						<tr>
+							<td style="width:80%">Alert Monitor (Production)</td>
+							<td style="width:10%"><a href="http://alertmonitorclient.prod.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+						<tr>
+							<td style="width:80%">Zabbix (Production)</td>
+							<td style="width:10%"><a href="http://zabbix.prod.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+						<tr>
+							<td style="width:80%">Grafana (Production)</td>
+							<td style="width:10%"><a href="http://grafana.prod.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+						<tr>
+							<td style="width:80%">HAProxy (Production)</td>
+							<td style="width:10%"><a href="http://haproxy.prod.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>				
+
+					
+					 
+					</tbody>
+				  </table>
+		</div>
+      </div>
+		</div>
+		
+								<div class="col-lg-4 col-md-3 py-2">
+			  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+						
+
+
+						<tr>
+							<td style="width:80%">Alert Monitor (Dev)</td>
+							<td style="width:10%"><a href="http://alertmonitorclient.dev.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+						<tr>
+							<td style="width:80%">Zabbix (Dev)</td>
+							<td style="width:10%"><a href="http://zabbix.dev.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+						<tr>
+							<td style="width:80%">Grafana (Dev)</td>
+							<td style="width:10%"><a href="http://grafana.dev.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+				
+						<tr>
+							<td style="width:80%">HAProxy (Dev)</td>
+							<td style="width:10%"><a href="http://haproxy.dev.internal.das" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					
+					 
+					</tbody>
+				  </table>
+		</div>
+      </div>
+		</div>
+		</div>
+	  
+
+      </div>
+      <div class="tab-pane fade" id="nav-storage" role="tabpanel" aria-labelledby="nav-storage-tab">
+	  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+					  	<tr>
+							<td style="width:80%">PUPNAS001 Management Portal</td>
+							<td style="width:10%"><a href="http://pupnas001.ui.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.11:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+					</tbody>
+				  </table>
+		</div>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="nav-virtual" role="tabpanel" aria-labelledby="nav-virtual-tab">
+	  	  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+					  	<tr>
+							<td style="width:80%">PEPESX001 vSphere Client</td>
+							<td style="width:10%"><a href="http://pepesx001.ui.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.11:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					  	<tr>
+							<td style="width:80%">PEPESX002 vSphere Client</td>
+							<td style="width:10%"><a href="http://pepesx002.ui.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.11:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					</tbody>
+				  </table>
+		</div>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="nav-vulnerablity" role="tabpanel" aria-labelledby="nav-vulnerablity-tab">
+	  	  	  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+					  	<tr>
+							<td style="width:80%">Wazuh</td>
+							<td style="width:10%"><a href="http://wazuh.ui.internal.das:80" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="http://10.0.0.11:" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+					</tbody>
+				  </table>
+		</div>
+      </div>
+      </div>
+	        <div class="tab-pane fade" id="nav-version" role="tabpanel" aria-labelledby="nav-version-tab">
+	  	  	  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+						<tr>
+							<td style="width:80%">github</td>
+							<td style="width:10%"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					
+					 
+					
+					
+						<tr>
+							<td style="width:80%">gitlab</td>
+							<td style="width:10%"><a href="https://about.gitlab.com/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					
+					 
+					
+					
+						<tr>
+							<td style="width:80%">bitbucket</td>
+							<td style="width:10%"><a href="https://bitbucket.org/product" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+					</tbody>
+				  </table>
+		</div>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="nav-container" role="tabpanel" aria-labelledby="nav-container-tab">
+	  	  	  	  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+						<tr>
+							<td style="width:80%">portainer</td>
+							<td style="width:10%"><a href="https://www.portainer.io/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+						<tr>
+							<td style="width:80%">docker</td>
+							<td style="width:10%"><a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					
+					 
+
+					</tbody>
+				  </table>
+		</div>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="nav-email" role="tabpanel" aria-labelledby="nav-email-tab">
+	  	  	  	  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+						<tr>
+							<td style="width:80%">gmail</td>
+							<td style="width:10%"><a href="https://www.google.com/gmail/about/" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+		
+						<tr>
+							<td style="width:80%">outlook</td>
+							<td style="width:10%"><a href="https://www.microsoft.com/en-in/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+					
+						<tr>
+							<td style="width:80%">proton mail</td>
+							<td style="width:10%"><a href="https://proton.me/mail" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+					</tbody>
+				  </table>
+		</div>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="nav-media" role="tabpanel" aria-labelledby="nav-media-tab">
+	  	  	  	  	          <div class="container card card-body px-3 py-3" style="width: 32rem;">
+        <div class="table-responsive">
+				  <table class="table table-hover table-bordered table-sm border-dark">
+					<tbody>
+						<tr>
+							<td style="width:80%">Amazon Prime</td>
+							<td style="width:10%"><a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+						<tr>
+							<td style="width:80%">Disney Hot Star</td>
+							<td style="width:10%"><a href="https://www.hotstar.com/in/home?ref=%2Fin" target="_blank" rel="noopener noreferrer" >link 1</a></td>
+							<td style="width:10%"><a href="https://" target="_blank" rel="noopener noreferrer">link 2</a></td>
+						</tr>
+
+					</tbody>
+				  </table>
+		</div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+	
+	<script  rel="text/javascript" charset="utf8" src="static/javascripts/jquery-3.6.0.min.js"></script>
+	<script rel="text/javascript" charset="utf8" src="static/javascripts/jquery.dataTables.js"></script>
+	<script rel="text/javascript" charset="utf8" src="static/javascripts/bootstrap.bundle.min.js"></script>
+	<script rel="text/javascript" charset="utf8" src="static/javascripts/dataTables.bootstrap5.js"></script>
+    
+  </body>
+</html>

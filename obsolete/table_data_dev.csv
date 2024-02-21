@@ -1,0 +1,14 @@
+Category,Sub-Category,Label,Icon,Link1,Link2
+Network,Routers,Router 1,bi bi-router,http://wlsrt.inet0.internal.das,http://192.168.1.1
+Network,Routers,Router 2,bi bi-router,http://wlsrt.inet1.internal.das,http://10.0.0.1
+Network,Switches,Gigabit Ethernet Switch 1,bi bi-ethernet,http://sw0.internal.das,http://10.0.0.2
+Network,Switches,Gigabit Ethernet Switch 2,bi bi-ethernet,http://sw1.internal.das,http://10.0.0.3
+Placeholder_category1,Placeholder_sub-category1,label1,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
+Placeholder_category1,Placeholder_sub-category1,label2,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
+Placeholder_category1,Placeholder_sub-category2,label3,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
+Placeholder_category2,Placeholder_sub-category1,label1,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
+Placeholder_category2,Placeholder_sub-category1,label2,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
+Placeholder_category2,Placeholder_sub-category2,label3,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
+Placeholder_category2,Placeholder_sub-category3,label4,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
+Placeholder_category2,Placeholder_sub-category3,label5,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
+Placeholder_category2,Placeholder_sub-category4,label6,bi bi-question-circle,http://www.google.co.in,http://www.google.co.in
