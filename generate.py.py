@@ -19,11 +19,6 @@ here = os.path.dirname(os.path.abspath(__file__))
 template_dir = os.path.join(here, "templates")
 env = Environment(loader=FileSystemLoader(template_dir))
 
-with open('table_data.json', 'r') as table_datafile:
-    table_data = json.load(table_datafile)
-
-
-    
 
 # Render the template and pass the variables 
 template = env.get_template(sys.argv[1])
